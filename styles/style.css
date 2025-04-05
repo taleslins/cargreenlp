@@ -8,6 +8,7 @@
 --Cor-hover-botão: #03e05f;
 --Cor-botao: #31511E;
 --Cor-busca: #adff2f;
+--Cor-grid: #8896a7;
 
 
 --Fonte-texto-primária: "Krona One", sans-serif;
@@ -140,16 +141,31 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 30px;
-    padding-top: 50px;
+    padding-top: 50px; 
+    margin: 0 auto;
 }
 
 .objeto__carros { 
-    height: 400px;
-    background-color: var(--Cor-destaque);
+    height: auto;
+    padding: 20px;
+    background-color: var(--Cor-grid);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.objeto__carros p {
+    width: 90%;
+    font-style: italic;    
+}
+
+.conteudo__carro {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
