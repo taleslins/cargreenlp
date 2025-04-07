@@ -10,7 +10,7 @@
 --Cor-busca: #adff2f;
 --Cor-grid: #7d8ea3;
 --Cor-botão-grid: #00ffff;
-
+--Cor-strong:#03e05f;
 
 --Fonte-texto-primária: "Krona One", sans-serif;
 --Fonte-texto-secundaria: "Montserrat", "sans-serif";
@@ -202,6 +202,55 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+
+.conteudo__sobre {
+    padding: 2rem 5%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    margin: 3rem auto;
+    max-width: 1000px;
+    font-family: var(--Fonte-texto-secundaria);
+}
+
+.conteudo__sobre {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo__sobre__texto1 {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.conteudo__sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.conteudo__sobre p strong {
+    color: var(--Cor-strong);
+}
+.conteudo__sobre h2 {
+    font-size: 1.8rem;
+    color: #1b5e20;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.conteudo__sobre ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
+.conteudo__sobre ul li {
+    margin-bottom: 8px;
 }
 
 
