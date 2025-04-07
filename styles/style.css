@@ -204,7 +204,18 @@ body {
     justify-content: space-around;
 }
 
+.conteudo__carro__preco {
+    font-weight: bold;
+    color: #07d396;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
 
+.conteudo__carro__promocao { 
+    text-decoration-line: line-through;
+    padding-right: 0.6rem;
+}
 .conteudo__sobre {
     padding: 2rem 5%;
     background-color: #ffffff;
