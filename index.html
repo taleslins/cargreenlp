@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarGreenLP</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script defer src = "carrinho.js"></script>
+    <script defer src = "filtro.js"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -13,14 +15,9 @@
                 <a class="cabecalho__menu__link" href="index.html">Home</a>               
                 <a class="cabecalho__menu__link" href="about.html">Sobre nós</a>
             </div>
-                <div class="carrinho">
-                    <a href="carrinho.html">
-                        <img src="./assets/carrinho.png" alt="Carrinho">
-                      </a>
-                </div>
                     <div class="menu__botoes">
-                        <button class="cabecalho__menu__botao">Entrar</button>
-                        <button class="cabecalho__menu__botao">Registrar-se</button>
+                        <button class="cabecalho__menu__botao" onclick="window.location.href='login.html'">Entrar</button>
+                        <button class="cabecalho__menu__botao" onclick="window.location.href='registro.html'">Registrar-se</button>
                     </div>
                 </nav>
     </header>
@@ -45,63 +42,63 @@
                         </div>
 
                         <div class="conteudo__catalogo__carros">
-                            <div class="objeto__carros">
+                            <div class="objeto__carros" id="carro-terravolt">
                                 <img src="./assets/carro1.png" alt="Carro 1">
                                 <div class="conteudo__carro">
                                     <h3>TerraVolt</h3>
                                     <p>Ideal para o dia a dia urbano, moderno e se destaca nas ruas.</p>
                                     <p class="conteudo__carro__preco"><span class = "conteudo__carro__promocao">R$ 100.000</span>R$ 50.000</p>
-                                    <button type="button">Comprar agora</button>
+                                    <button type="button" class = "compra__carro__1" onclick="window.location.href='carro1.html'">Comprar agora</button>
                                 </div>
                             </div>
                         
-                            <div class="objeto__carros">
+                            <div class="objeto__carros" id="carro-quantumdrive">
                                 <img src="./assets/carro2.png" alt="Carro 2">
                                 <div class="conteudo__carro">
                                     <h3>QuantumDrive</h3>
                                     <p>Um carro pra você que gosta de sentir o seu próprio espaço</p>
                                     <p class="conteudo__carro__preco">R$ 120.000</p>
-                                    <button type="button">Comprar agora</button>
+                                    <button type="button" class = "compra__carro__2" onclick="window.location.href='carro2.html'">Comprar agora</button>
                                 </div>
                             </div>
                         
-                            <div class="objeto__carros">
+                            <div class="objeto__carros" id="carro-nightflow">
                                 <img src="./assets/carro3.png" alt="Carro 3">
                                 <div class="conteudo__carro">
                                     <h3>NightFlow</h3>
                                     <p>O NightFlow é feito para quem vive a cidade intensamente, mesmo à noite.</p>
                                     <p class="conteudo__carro__preco">R$ 80.000</p>
-                                    <button type="button">Comprar agora</button>
+                                    <button type="button" class = "compra__carro__3" onclick="window.location.href='carro3.html'">Comprar agora</button>
                                 </div>
                             </div>
                         
-                            <div class="objeto__carros">
+                            <div class="objeto__carros" id="carro-desertcity">
                                 <img src="./assets/carro4.png" alt="Carro 4">
                                 <div class="conteudo__carro">
                                     <h3>DesertCity</h3>
                                     <p>Inspirado na velocidade e na robustez dos clássicos.</p>
                                     <p class="conteudo__carro__preco">R$ 95.000</p>
-                                    <button type="button">Comprar agora</button>
+                                    <button type="button" class = "compra__carro__4" onclick="window.location.href='carro4.html'">Comprar agora</button>
                                 </div>
                             </div>
                         
-                            <div class="objeto__carros">
+                            <div class="objeto__carros" id="carro-zenithdrive">
                                 <img src="./assets/carro5.png" alt="Carro 5">
                                 <div class="conteudo__carro">
                                     <h3>ZenithDrive</h3>
                                     <p>O ZenithDrive une inteligência artificial e luxo em um só modelo.</p>
-                                    <p class="conteudo__carro__preco">R$ 95.000</p>
-                                    <button type="button">Comprar agora</button>
+                                    <p class="conteudo__carro__preco">R$ 150.000</p>
+                                    <button type="button" class = "compra__carro__5" onclick="window.location.href='carro5.html'">Comprar agora</button>
                                 </div>
                             </div>
                         
-                            <div class="objeto__carros">
+                            <div class="objeto__carros" id="carro-redmoon">
                                 <img src="./assets/carro6.png" alt="Carro 6">
                                 <div class="conteudo__carro">
                                     <h3>Redmoon</h3>
                                     <p>Redmoon é feito para quem quer viver com intensidade.</p>
-                                    <p class="conteudo__carro__preco">R$ 95.000</p>
-                                    <button type="button">Comprar agora</button>
+                                    <p class="conteudo__carro__preco">R$ 145.000</p>
+                                    <button type="button" class = "compra__carro__6" onclick="window.location.href='carro6.html'">Comprar agora</button>
                                 </div>
                             </div>
                         </div>                                  

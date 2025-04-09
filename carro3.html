@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarGreenLP</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src = "carrinho.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <div class="menu__links">
+                <a class="cabecalho__menu__link" href="index.html">Home</a>               
+                <a class="cabecalho__menu__link" href="about.html">Sobre nós</a>
+            </div>
+                    <div class="menu__botoes">
+                        <button class="cabecalho__menu__botao" onclick="window.location.href='login.html'">Entrar</button>
+                        <button class="cabecalho__menu__botao" onclick="window.location.href='registro.html'">Registrar-se</button>
+                    </div>
+                </nav>
+    </header>
+
+    <main class="compra">
+        <section class="compra__objeto__carros">
+            <img src="./assets/carro3.png" alt="TerraVolt">
+            <div class="compra__conteudo__carro">
+                <h3>NightFlow</h3>
+                <p>O NightFlow é feito para quem vive a cidade intensamente, mesmo à noite.</p>
+                <p class="compra__carro__preco">
+                    <span id="compra__valor__carro">R$ 80.000</span>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Método de Pagamento</h2>
+            <label for="metodo">Escolha um método:</label>
+                <select class="metodo" name="metodo">
+                    <option value="pix">PIX</option>
+                    <option value="credito">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                </select>
+                
+                <div id="parcelas__carro">
+                    <label for="parcelas">Escolha o número de parcelas:</label>
+                    <select id="parcelas" name="parcelas">
+                        <option value="1">1x de R$ 80.000,00 sem juros</option>
+                        <option value="2">2x de R$ 40.000,00 sem juros</option>
+                        <option value="3">3x de R$ 26.666,67 sem juros</option>
+                        <option value="4">4x de R$ 20.000,00 sem juros</option>
+                        <option value="5">5x de R$ 16.000,00 sem juros</option>
+                        <option value="6">6x de R$ 13.333,33 sem juros</option>
+                        <option value="7">7x de R$ 12.110,57 com juros</option>
+                        <option value="8">8x de R$ 11.019,94 com juros</option>
+                        <option value="9">9x de R$ 10.169,10 com juros</option>
+                        <option value="10">10x de R$ 9.475,08 com juros</option>
+                        <option value="11">11x de R$ 8.891,78 com juros</option>
+                        <option value="12">12x de R$ 8.395,15 com juros</option>
+
+                    </select>
+                </div>
+                <button type="submit" class = "metodo__finalizar__compra">Finalizar Compra</button>
+            <button type="button" class="metodo__remover__produto" onclick="window.location.href='index.html'">Remover Produto</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 [Tales Sousa Lins]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

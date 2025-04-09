@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nós</title>
+    <title>CarGreenLP</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <script defer src = "carrinho.js"></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -13,16 +14,11 @@
                 <a class="cabecalho__menu__link" href="index.html">Home</a>               
                 <a class="cabecalho__menu__link" href="about.html">Sobre nós</a>
             </div>
-            <div class="carrinho">
-                <a href="carrinho.html">
-                    <img src="./assets/carrinho.png" alt="Carrinho">
-                  </a>
-            </div>
-            <div class="menu__botoes">
-                <button class="cabecalho__menu__botao">Entrar</button>
-                <button class="cabecalho__menu__botao">Registrar-se</button>
-            </div>
-        </nav>
+                    <div class="menu__botoes">
+                        <button class="cabecalho__menu__botao" onclick="window.location.href='login.html'">Entrar</button>
+                        <button class="cabecalho__menu__botao" onclick="window.location.href='registro.html'">Registrar-se</button>
+                    </div>
+                </nav>
     </header>
 
     <main class="conteudo">

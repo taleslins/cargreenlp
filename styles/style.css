@@ -2,14 +2,15 @@
 
 :root {
 --Cor-fundo: #E8F9FD;
+--Cor-fundo-rodape-header:#53dfb5;
 --Cor-texto: #5c5c5c;
 --Cor-destaque: #89AC46;
 --Cor-hover: #0c38ca;
---Cor-hover-botão: #03e05f;
+--Cor-hover-botao: #03e05f;
 --Cor-botao: #31511E;
 --Cor-busca: #adff2f;
 --Cor-grid: #7d8ea3;
---Cor-botão-grid: #00ffff;
+--Cor-botao-grid: #00ffff;
 --Cor-strong:#03e05f;
 
 --Fonte-texto-primária: "Krona One", sans-serif;
@@ -26,8 +27,13 @@ body {
     box-sizing: border-box;
     background-color: var(--Cor-fundo);
     color: var(--Cor-texto);
+    min-height:100vh;
+    margin: 0 auto;  
 }
 
+main {
+    flex: 1;
+}
 .cabecalho {
     background-color: #53dfb5;
     padding: 2.0rem;
@@ -57,19 +63,6 @@ body {
 
 .cabecalho__menu__link:hover {
     color:#0c38ca;
-}
-
-.carrinho {
-    display: flex;
-    align-items: center;
-    gap: 3.125px;
-    margin-left: 72rem;
-}
-
-.carrinho img {  
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
 }
 
 .menu__botoes {
@@ -191,11 +184,16 @@ body {
     border-color:#00ffff;
     border-radius: 5px;
     border-color:var(--Cor-hover);
-    background: var(--Cor-botão-grid);
+    background: var(--Cor-botao-grid);
     font-weight:bold;
     
 }
 
+.objeto__carros button:hover {
+    background:#6697d8;
+    transition:0.2s;
+
+}
 .conteudo__carro {
     height: 40%;
     display: flex;
@@ -264,6 +262,179 @@ body {
     margin-bottom: 8px;
 }
 
+.compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.compra__objeto__carros {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.compra__objeto__carros img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.compra__conteudo__carro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.compra__conteudo__carro h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.compra__conteudo__carro p {
+    margin: 0.3rem 0;
+}
+
+.compra__carro__preco {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+#compra__valor__carro {
+    color: #07d396;
+}
+
+.compra__carro__promocao {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 0.5rem;
+}
+
+
+select, button[type="submit"] {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.metodo__remover__produto {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+
+.metodo__remover__produto:hover {
+    background-color: #45a049;
+}
+
+.conteudo__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.conteudo__informacoes {
+    background-color: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login__titulo {
+    font-size: 1.8rem;
+    font-family: var(--Fonte-texto-secundaria);
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--Cor-texto);
+}
+
+.conteudo__informacoes label {
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.conteudo__informacoes input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: var(--Fonte-texto-secundaria);
+}
+
+.conteudo__informacoes input:focus {
+    border-color: var(--Cor-hover);
+    outline: none;
+    box-shadow: 0 0 0 2px #cce1ff;
+}
+
+.conteudo__entrar {
+    display: block;
+    margin-right: 1rem;
+    background-color: var(--Cor-botao);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login__registro {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.login__registro a {
+    color: var(--Cor-hover);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login__registro a:hover {
+    text-decoration: underline;
+}
+
+
+
+.rodape {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--Cor-fundo-rodape-header);
+    color: white;
+    margin-top: 3rem;
+}
 
 @media (max-width: 1024px) {
     .cabecalho__menu {
@@ -272,10 +443,6 @@ body {
         gap: 1rem;
     }
 
-    .carrinho {
-        margin-left: 0;
-        justify-content: center;
-    }
 
     .conteudo {
         flex-direction: column;
